@@ -13,7 +13,6 @@ Source1:	http://ldots.org/xosd-guide/xosd-doc-0.01.tar.bz2
 Patch0:		xosd-2.2.14-fix-underquoted-calls.patch
 License:	GPL
 Group:		System/Libraries
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Buildrequires:	xmms-devel
 Buildrequires:	gdk-pixbuf-devel
 %if %mdkversion >= 1020
