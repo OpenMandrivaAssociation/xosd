@@ -1,6 +1,6 @@
 %define	name	xosd
 %define	version	2.2.14
-%define release	%mkrel 8
+%define release	%mkrel 10
 %define major	2
 %define libname	%mklibname %{name} %major
 
