@@ -103,14 +103,6 @@ rm -f %{buildroot}%{_libdir}/*/General/*.la
 %clean
 rm -fr %buildroot
 
-%if %mdkversion < 200900
-%post -n %libname -p /sbin/ldconfig
-%endif
-
-%if %mdkversion < 200900
-%postun -n %libname -p /sbin/ldconfig
-%endif
-
 %files -n xmms-xosd
 %defattr(-,root,root)
 %doc COPYING
@@ -142,6 +134,7 @@ rm -fr %buildroot
 %if %mdkversion >= 1020
 %multiarch %{multiarch_bindir}/xosd-config
 %endif
+
 %{_bindir}/xosd-config
 %{_mandir}/man1/xosd-config.1*
 %{_libdir}/libxosd.so
