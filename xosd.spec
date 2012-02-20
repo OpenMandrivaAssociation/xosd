@@ -16,9 +16,7 @@ Group:		System/Libraries
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Buildrequires:	xmms-devel
 Buildrequires:	gdk-pixbuf-devel
-%if %mdkversion >= 1020
 BuildRequires:	multiarch-utils >= 1.0.3
-%endif
 URL:		http://www.ignavus.net/software.html
 
 %description
@@ -94,7 +92,7 @@ libxosd that display it's output in a TV set's on screen display fashion.
 %install
 rm -rf $RPM_BUILD_ROOT
 %makeinstall_std
-rm -f %{buildroot}%{_libdir}/*.a
+rm -f %{buildroot}%{_libdir}/*a
 rm -f %{buildroot}%{_libdir}/*/General/*.la
 %if %mdkversion >= 1020
 %multiarch_binaries %{buildroot}%{_bindir}/xosd-config
@@ -131,14 +129,11 @@ rm -fr %buildroot
 %files -n %{libname}-devel
 %defattr(-,root,root)
 %doc COPYING ChangeLog README AUTHORS xosd-doc-0.01/html
-%if %mdkversion >= 1020
 %multiarch %{multiarch_bindir}/xosd-config
-%endif
 
 %{_bindir}/xosd-config
 %{_mandir}/man1/xosd-config.1*
 %{_libdir}/libxosd.so
-%{_libdir}/libxosd.la
 %{_includedir}/*.h
 %{_datadir}/aclocal/libxosd.m4
 %{_mandir}/man3/*
