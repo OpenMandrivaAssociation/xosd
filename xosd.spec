@@ -11,6 +11,7 @@ Patch0:		xosd-2.2.14-fix-underquoted-calls.patch
 License:	GPL
 Group:		System/Libraries
 BuildRequires:	pkgconfig(gdk-pixbuf-2.0)
+BuildRequires:	pkgconfig(gdk-2.0)
 URL:		http://www.ignavus.net/software.html
 
 %description
