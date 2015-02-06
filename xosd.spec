@@ -4,7 +4,7 @@
 Summary:	X On Screen Display
 Name:		xosd
 Version:	2.2.14
-Release:	13
+Release:	14
 Source0:	http://www.ignavus.net/%{name}-%{version}.tar.bz2
 Source1:	http://ldots.org/xosd-guide/xosd-doc-0.01.tar.bz2
 Patch0:		xosd-2.2.14-fix-underquoted-calls.patch
