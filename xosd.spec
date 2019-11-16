@@ -11,11 +11,12 @@ Patch0:		xosd-2.2.14-fix-underquoted-calls.patch
 Patch1:		xosd-drop-gtk+.patch
 License:	GPL
 Group:		System/Libraries
-#BuildRequires:	pkgconfig(gdk-pixbuf-2.0)
+BuildRequires:	pkgconfig(gdk-pixbuf-2.0)
 BuildRequires:	pkgconfig(ice)
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xext)
 BuildRequires:	pkgconfig(xinerama)
+BuildRequires:  xmms2-devel	
 URL:		http://www.ignavus.net/software.html
 
 %description
