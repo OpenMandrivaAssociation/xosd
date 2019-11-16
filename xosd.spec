@@ -8,6 +8,7 @@ Release:	14
 Source0:	http://www.ignavus.net/%{name}-%{version}.tar.bz2
 Source1:	http://ldots.org/xosd-guide/xosd-doc-0.01.tar.bz2
 Patch0:		xosd-2.2.14-fix-underquoted-calls.patch
+Patch1:		xosd-drop-gtk+.patch
 License:	GPL
 Group:		System/Libraries
 BuildRequires:	pkgconfig(gdk-pixbuf-2.0)
@@ -50,7 +51,7 @@ libxosd that display it's output in a TV set's on screen display fashion.
 
 %prep
 %setup -q -a 1
-%patch0 -p1 -b .underquoted
+%autopatch -p1
 
 %build
 %configure2_5x
