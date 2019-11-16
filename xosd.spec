@@ -12,6 +12,7 @@ Patch1:		xosd-drop-gtk+.patch
 License:	GPL
 Group:		System/Libraries
 #BuildRequires:	pkgconfig(gdk-pixbuf-2.0)
+BuildRequires:	pkgconfig(ice)
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xext)
 BuildRequires:	pkgconfig(xinerama)
