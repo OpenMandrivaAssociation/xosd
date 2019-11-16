@@ -1,0 +1,15 @@
+Index: xosd-2.2.14/configure.ac
+===================================================================
+--- xosd-2.2.14/configure.ac
++++ xosd-2.2.14/configure.ac	2011-04-20 02:45:22.787221301 +0300
+@@ -54,8 +54,8 @@
+ AC_SUBST(M4DATADIR)
+ 
+ dnl Checks for libraries.
+-AM_PATH_GTK(1.2.2,,
+-	    AC_MSG_WARN([*** GTK+ >= 1.2.2 not found ***]))
++#AM_PATH_GTK(1.2.2,,
++#	    AC_MSG_WARN([*** GTK+ >= 1.2.2 not found ***]))
+ AC_CHECK_LIB(X11, XInitThreads,,
+ 	     AC_MSG_ERROR([*** X11 not threadsafe ***]))
+ AC_CHECK_LIB(Xext, XShapeQueryExtension,,
