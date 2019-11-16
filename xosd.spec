@@ -10,7 +10,7 @@ Source1:	http://ldots.org/xosd-guide/xosd-doc-0.01.tar.bz2
 Patch0:		xosd-2.2.14-fix-underquoted-calls.patch
 License:	GPL
 Group:		System/Libraries
-BuildRequires:	gdk-pixbuf-devel
+BuildRequires:	pkgconfig(gdk-pixbuf-2.0)
 URL:		http://www.ignavus.net/software.html
 
 %description
