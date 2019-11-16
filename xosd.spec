@@ -11,6 +11,7 @@ Patch0:		xosd-2.2.14-fix-underquoted-calls.patch
 Patch1:		xosd-drop-gtk+.patch
 License:	GPL
 Group:		System/Libraries
+BuildRequires:  libtool
 BuildRequires:	pkgconfig(gdk-pixbuf-2.0)
 BuildRequires:	pkgconfig(ice)
 BuildRequires:	pkgconfig(x11)
