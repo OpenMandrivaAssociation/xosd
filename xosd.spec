@@ -11,7 +11,7 @@ Patch0:		xosd-2.2.14-fix-underquoted-calls.patch
 License:	GPL
 Group:		System/Libraries
 BuildRequires:	gdk-pixbuf-devel
-URL:		http://www.ignavus.net/software.html
+URL:		https://www.ignavus.net/software.html
 
 %description
 This package contains an xmms plugin to display various things whenever they 
